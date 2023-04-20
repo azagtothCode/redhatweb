@@ -1,0 +1,333 @@
+/****************************
+*                           *
+*   Autor: Ulises Garduño   *
+*   Abril de 2022           *
+*   Estilos para el web     *
+*   site de DELL            *
+*                           *
+****************************/
+
+body{
+    letter-spacing: 2px;
+    /* text-align: justify; */
+    background-color: #c0c8cf;
+}
+
+@font-face {
+    font-family: fontTitle;
+    src: url(../src/fonts/font/RedHatText-Bold.woff2);
+}
+
+@font-face {
+    font-family: fontBody;
+    src: url(../src/fonts/font/RedHatText-Regular.woff2);
+
+}
+
+p{
+    font-family: fontBody; 
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#rel p{
+    margin-top:40px;
+}
+
+#ansible p{
+    margin-top:40px;
+}
+
+ #opensh p{
+    margin-top:40px;
+}
+
+form, iframe{
+    margin-top:40px;
+}
+
+
+h2{
+    font-family: fontTitle;
+}
+
+
+ul {
+    list-style: none; /* Remove default bullets */
+    font-family: fontBody;
+
+}
+  
+#listAnsi li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #2a9d8f; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.titleGreen{
+    color:#2a9d8f;
+}
+
+.titleRed{
+    color:#ff4f5b;
+}
+
+#bckGreen{
+    background-color:#2a9d8f;
+    border: none;
+    margin-top: 20px;
+}
+
+#bckRed{
+    background-color:#ff4f5b;
+    border: none;
+    margin-top: 20px;
+    
+}
+/****************************
+*                           *
+*        parallax           *
+*                           *
+****************************/
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+    background-image: url('../imgs/gral/parallax1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Second image (Portfolio) */
+
+.bgimg-2 {
+    background-image: url("../imgs/gral/parallax2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Third image (Contact) */
+
+.bgimg-3 {
+    background-image: url("../imgs/gral/parallax3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* semitransparent screen over parallax*/
+
+.screen-dark {
+    background-color: rgba(0, 32, 64, 0.66);
+    width: 100%;
+    height: 360px;
+    z-index: 99;
+}
+
+.bg-grey {
+    background-color: #0a6638;
+}
+
+
+.fadeIn {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.navbar-nav li {
+    cursor: pointer;
+}
+.navbar-nav li {
+
+    color: #c0c8cf;
+    padding: 10px;
+}
+
+/* CANVAS SECTION AND CONTENT LIST */
+#offcanvasTop{
+    height: 100%;
+    background-color: #212529;
+}
+
+#offcanvasTopLabel{
+    height: 100%;
+    color: #c0c8cf;
+}
+
+.offcanvas{
+    color: #c0c8cf;
+    padding: 10px;
+}
+
+.offcanvas-header .btn-close{
+    background-color: #c0c8cf;
+    color :white;
+    
+}
+.btn-open{
+    background-color: #212529;
+    border-color: rgba(255,255,255,.1);
+}
+.list-group .list-group-item{
+    background-color: transparent;
+    border: none;
+}
+
+.list-group .list-group-item {
+    color: #c0c8cf;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.list-group li:hover{
+    border-left: 5px solid #c0c8cf;
+}
+
+.sectionCarousel{
+    background-color: #25282b;
+    margin-top: 56px;
+}
+
+/* CARDS SECTION SERVIES */
+#containerCards{
+    padding: 110px;
+}
+
+#containerCards .card{
+    border:none;
+}
+
+#containerCards p{
+    font-size:20px;
+    color: rgb(87, 87, 87);
+}
+
+.card{
+    /* width: 18rem; */
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*  */
+#rel, #ansible, #opensh, #ccspdiv, #ctct{
+    margin-top: 120px;
+}
+/* FOOTER SECTION ONLY */
+#footer{
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#footer a{
+    text-decoration: none;
+
+}
+
+.social-icon {
+    margin: 0.5em;
+    fill: #c8c8c8;
+}
+
+.social-icon:hover {
+    fill: white;
+    cursor: pointer;
+}
+
+#social-footer a,
+#social-footer svg {
+    text-decoration: none!important;
+    padding: 0px;
+}
+
+#topBtn {
+    width: 62px;
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 11px;
+    z-index: 99;
+    background-color: #2a9d8f;
+    color: #fff;
+    border-radius: 8px;
+    border: solid 1px #2a9d8f;
+}
+
+#topBtn svg {
+    width: 40px;
+    height: auto;
+}
+
+#topBtn:hover {
+    background-color: #fff;
+    color: #2a9d8f;
+    cursor: pointer;
+}
+
+.socialIcons {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 20px; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.socialIcons ul {
+  list-style: none;
+}
+
+.socialIcons ul li a {
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+
+/* MEDIA QUERIES SECTION */
+@media screen and (max-width: 1440px) {
+    #containerCards{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card{
+        width: 18rem;
+    }
+}
